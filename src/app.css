@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .app-header {
+        @apply text-4xl text-center tracking-[.25em] font-light uppercase px-4 py-2
+    }
+}
+
+@layer components {
+    .sign-in-container {
+        @apply flex flex-col w-full justify-center 
+    }
+    .sign-in-up-container {
+        @apply text-right m-2
+    }
+    .sign-in-btn, .sign-up-btn {
+        @apply border rounded-md m-2 px-4 py-2
+    }
+    .email-input, .pw-input {
+        @apply border rounded-md mx-[20em] my-4 px-4 py-2
+    }
+}
